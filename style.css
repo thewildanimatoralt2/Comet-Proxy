@@ -1,0 +1,57 @@
+/* comet proxy style */
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #0d0d0d;
+  color: #99dfff;
+}
+
+@keyframes glowShift {
+  0%   { color: #99dfff; text-shadow: 0 0 5px #99dfff, 0 0 10px #99dfff; }
+  50%  { color: #99faff; text-shadow: 0 0 5px #99faff, 0 0 10px #99faff; }
+  100% { color: #99dfff; text-shadow: 0 0 5px #99dfff, 0 0 10px #99dfff; }
+}
+
+.glow-text {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: normal;
+  animation: glowShift 3s infinite ease-in-out;
+}
+
+input {
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  background: #111;
+  border: 1px solid #99dfff;
+  color: #99dfff;
+  font-size: 16px;
+}
+
+button {
+  width: 82%;
+  margin: 0 auto 20px;
+  display: block;
+  padding: 10px;
+  background: #99dfff;
+  border: none;
+  color: #0d0d0d;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #99faff;
+}
+
+iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  background: #1a1a1a;
+}
