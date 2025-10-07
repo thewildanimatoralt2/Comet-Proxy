@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>comet proxy</title>
-  <style>
-    body { margin: 0; font-family: sans-serif; background: #111; color: #eee; }
-    input, button { padding: 10px; margin: 10px; width: 80%; }
-    iframe { width: 100%; height: 90vh; border: none; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h2>comet proxy</h2>
+  <h2 class="glow-text">comet proxy</h2>
   <input id="url" placeholder="enter a website url (https://...)" />
   <button onclick="go()">launch</button>
   <iframe id="frame"></iframe>
@@ -23,3 +21,4 @@
   </script>
 </body>
 </html>
+
